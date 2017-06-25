@@ -145,8 +145,8 @@ PlayerSettings:
     tvOS: com.onestudio.colorsix
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 7
-  AndroidMinSdkVersion: 16
+  AndroidBundleVersionCode: 0
+  AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -218,8 +218,8 @@ PlayerSettings:
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/wangrenyu/Desktop/Game.keystore
-  AndroidKeyaliasName: milier
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1
@@ -522,7 +522,8 @@ PlayerSettings:
   incrementalIl2cppBuild:
     iOS: 1
   additionalIl2CppArgs: 
-  apiCompatibilityLevelPerPlatform: {}
+  apiCompatibilityLevelPerPlatform:
+    Android: 2
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Hexa!

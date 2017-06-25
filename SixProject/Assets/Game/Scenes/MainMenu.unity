@@ -299,46 +299,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52734803}
---- !u!1 &77363805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 77363806}
-  - component: {fileID: 77363807}
-  m_Layer: 0
-  m_Name: Purcahse
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &77363806
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 77363805}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &77363807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 77363805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e123316627e014548aa3513f35eb7145, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &110360119
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260957423
 GameObject:
@@ -2344,6 +2304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6094321b5ae0a478f701ae6d8746f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AndroidUrl: 
   subject: Hexa!
   sharePanel: {fileID: 1855018157}
   shareScoreText: {fileID: 2054945690}
@@ -2995,7 +2956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &955015915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,7 +2979,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &955015917
 MonoBehaviour:
@@ -3028,7 +2989,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 955015914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05aead5ac1e2f24397a81adbe209bac, type: 3}
+  m_Script: {fileID: 11500000, guid: 90c974e5f2b49f245a909f543dc0bd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &955015918
@@ -4175,7 +4136,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 476154, guid: 1b526b643c9b2e847813e3d8459ffc23, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114828864505022500, guid: 1b526b643c9b2e847813e3d8459ffc23,
         type: 2}
