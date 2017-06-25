@@ -31,7 +31,7 @@ public class RewardButton : MonoBehaviour {
 
         try
         {
-            GameObject.Find("AnalyticsTools").GetComponent<TestUnityAds>().HandleShowButtonClick();
+            //GameObject.Find("AnalyticsTools").GetComponent<TestUnityAds>().HandleShowButtonClick();
 
         }
         catch (System.Exception)
@@ -72,7 +72,7 @@ public class RewardButton : MonoBehaviour {
     {
         try
         {
-            AnalyticsTools.Instance.GetUMAnalytics().OnEvent("reward_Click");
+            //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("reward_Click");
         }
         catch (System.Exception)
         {

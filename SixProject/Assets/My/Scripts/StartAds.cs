@@ -11,7 +11,7 @@ public class StartAds : MonoBehaviour {
         {
             try
             {
-                GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
+                //GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
                 ClickPoint.Instance.isStartShowAds = false;
             }
             catch (System.Exception)

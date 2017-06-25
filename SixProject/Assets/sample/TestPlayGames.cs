@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityPluginPlayGames;
-using UnityPluginPlayGames.Common;
+//using UnityPluginPlayGames;
+//using UnityPluginPlayGames.Common;
 
 public class TestPlayGames : MonoBehaviour {
 
@@ -18,53 +18,53 @@ public class TestPlayGames : MonoBehaviour {
 	public Button btnScore10000;
 	public Button btnShowLeaderboard;
 
-	private IPlayGamesService playGamesService;
+	//private IPlayGamesService playGamesService;
 
 	// Use this for initialization
 	void Start () {
-		playGamesService = AdsClientFactory.GetPlayGamesService();
+		//playGamesService = AdsClientFactory.GetPlayGamesService();
 
-		playGamesService.OnSignInSucceeded += OnSignInSucceeded;
-		playGamesService.OnSignInFailed += OnSignInFailed;
-		playGamesService.OnRequireSignIn += OnRequireSignIn;
+		//playGamesService.OnSignInSucceeded += OnSignInSucceeded;
+		//playGamesService.OnSignInFailed += OnSignInFailed;
+		//playGamesService.OnRequireSignIn += OnRequireSignIn;
 
-		playGamesService.Setup();
+		//playGamesService.Setup();
 
-		btnSignIn.onClick.AddListener(() => {
-			playGamesService.BeginUserInitiatedSignIn();
-		});
+		//btnSignIn.onClick.AddListener(() => {
+		//	playGamesService.BeginUserInitiatedSignIn();
+		//});
 
-		btnSignOut.onClick.AddListener(() => {
-			playGamesService.SignOut();
-			Debug.Log("Sign Out");
-			ShowSignInButton();
-		});
+		//btnSignOut.onClick.AddListener(() => {
+		//	playGamesService.SignOut();
+		//	Debug.Log("Sign Out");
+		//	ShowSignInButton();
+		//});
 
-		btnAchievePrime.onClick.AddListener(() => {
-			playGamesService.UnlockAchievement("CgkIhb2XjIMSEAIQAw");
-		});
+		//btnAchievePrime.onClick.AddListener(() => {
+		//	playGamesService.UnlockAchievement("CgkIhb2XjIMSEAIQAw");
+		//});
 
-		btnAchieveSecond.onClick.AddListener(() => {
-			playGamesService.UnlockAchievement("CgkIhb2XjIMSEAIQBA");
-		});
+		//btnAchieveSecond.onClick.AddListener(() => {
+		//	playGamesService.UnlockAchievement("CgkIhb2XjIMSEAIQBA");
+		//});
 
-		btnShowAchieve.onClick.AddListener(() => {
-			bool isSignIn = playGamesService.IsSignedIn();
-			Debug.Log("IsSignIn: " + isSignIn);
-			playGamesService.ShowAchievements();
-		});
+		//btnShowAchieve.onClick.AddListener(() => {
+		//	bool isSignIn = playGamesService.IsSignedIn();
+		//	Debug.Log("IsSignIn: " + isSignIn);
+		//	playGamesService.ShowAchievements();
+		//});
 
-		btnScore5000.onClick.AddListener(() => {
-			playGamesService.SubmitScore("CgkIhb2XjIMSEAIQCA", 5000);
-		});
+		//btnScore5000.onClick.AddListener(() => {
+		//	playGamesService.SubmitScore("CgkIhb2XjIMSEAIQCA", 5000);
+		//});
 
-		btnScore10000.onClick.AddListener(() => {
-			playGamesService.SubmitScore("CgkIhb2XjIMSEAIQCA", 10000);
-		});
+		//btnScore10000.onClick.AddListener(() => {
+		//	playGamesService.SubmitScore("CgkIhb2XjIMSEAIQCA", 10000);
+		//});
 
-		btnShowLeaderboard.onClick.AddListener(() => {
-			playGamesService.ShowLeaderboard("CgkIhb2XjIMSEAIQCA");
-		});
+		//btnShowLeaderboard.onClick.AddListener(() => {
+		//	playGamesService.ShowLeaderboard("CgkIhb2XjIMSEAIQCA");
+		//});
 	}
 	
 	void OnSignInSucceeded() {

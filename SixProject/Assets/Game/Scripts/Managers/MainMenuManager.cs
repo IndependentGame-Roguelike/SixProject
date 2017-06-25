@@ -73,7 +73,7 @@ namespace MadFireOn
 
             try
             {
-                AnalyticsTools.Instance.GetUMAnalytics().OnEvent("start_Click");
+                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("start_Click");
             }
             catch (System.Exception)
             {
@@ -89,7 +89,7 @@ namespace MadFireOn
             {
                 try
                 {
-                    GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
+                    //GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
 
                 }
                 catch (System.Exception)
@@ -144,7 +144,7 @@ namespace MadFireOn
         {
             try
             {
-                AnalyticsTools.Instance.GetUMAnalytics().OnEvent("rank_Click");
+                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("rank_Click");
             }
             catch (System.Exception)
             {

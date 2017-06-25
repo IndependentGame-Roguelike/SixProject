@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityPluginPlayGames;
-using UnityPluginPlayGames.Common;
+//using UnityPluginPlayGames;
+//using UnityPluginPlayGames.Common;
 
 
 /// <summary>
@@ -14,7 +14,7 @@ namespace MadFireOn
     public class InGameGUI : MonoBehaviour
     {
 
-        private IPlayGamesService playGamesService;
+        //private IPlayGamesService playGamesService;
 
         public static InGameGUI instance;
 
@@ -47,7 +47,7 @@ namespace MadFireOn
         // Use this for initialization
         void Start()
         {
-            playGamesService = AdsClientFactory.GetPlayGamesService();
+            //playGamesService = AdsClientFactory.GetPlayGamesService();
 
             //this line of code make the default button of android  invisible
             //*Important google feature requirement
@@ -148,7 +148,7 @@ namespace MadFireOn
             sound.Play();
             try
             {
-                AnalyticsTools.Instance.GetUMAnalytics().OnEvent("suspend_Click");
+                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("suspend_Click");
             }
             catch (System.Exception)
             {
@@ -160,7 +160,7 @@ namespace MadFireOn
             {
                 try
                 {
-                    GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
+                    //GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
                 }
                 catch (System.Exception)
                 {
@@ -188,7 +188,7 @@ namespace MadFireOn
         {
             try
             {
-                playGamesService.SubmitScore("CgkIxtab18QbEAIQAQ", GameManager.instance.currentScore);
+                //playGamesService.SubmitScore("CgkIxtab18QbEAIQAQ", GameManager.instance.currentScore);
 
             }
             catch (System.Exception)
@@ -257,7 +257,7 @@ namespace MadFireOn
 
             try
             {
-                AnalyticsTools.Instance.GetUMAnalytics().OnEvent("revive_Click");
+                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("revive_Click");
             }
             catch (System.Exception)
             {
@@ -266,7 +266,7 @@ namespace MadFireOn
 
             try
             {
-                GameObject.Find("AnalyticsTools").GetComponent<TestUnityAds>().HandleShowButtonClick();
+                //GameObject.Find("AnalyticsTools").GetComponent<TestUnityAds>().HandleShowButtonClick();
 
             }
             catch (System.Exception)

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityPluginPlayGames;
-using UnityPluginPlayGames.Common;
+//using UnityPluginPlayGames;
+//using UnityPluginPlayGames.Common;
 
 public class RankingList : MonoBehaviour
 {
@@ -18,28 +18,28 @@ public class RankingList : MonoBehaviour
     //public Button btnScore10000;            //10000
     public Button btnShowLeaderboard;       //展示排行榜
 
-    private IPlayGamesService playGamesService;
+    //private IPlayGamesService playGamesService;
 
     // Use this for initialization
     void Start()
     {
         //btnShowLeaderboard = GameObject.Find("LeaderboardButton").GetComponent<Button>();
 
-        playGamesService = AdsClientFactory.GetPlayGamesService();
+        //playGamesService = AdsClientFactory.GetPlayGamesService();
 
-        try
-        {
-            playGamesService.OnSignInSucceeded += OnSignInSucceeded;
-            playGamesService.OnSignInFailed += OnSignInFailed;
-            playGamesService.OnRequireSignIn += OnRequireSignIn;
+        //try
+        //{
+        //    playGamesService.OnSignInSucceeded += OnSignInSucceeded;
+        //    playGamesService.OnSignInFailed += OnSignInFailed;
+        //    playGamesService.OnRequireSignIn += OnRequireSignIn;
 
-            playGamesService.Setup();
-        }
-        catch (System.Exception)
-        {
+        //    playGamesService.Setup();
+        //}
+        //catch (System.Exception)
+        //{
 
-            Debug.Log("No Active");
-        }
+        //    Debug.Log("No Active");
+        //}
 
 
         //btnSignIn.onClick.AddListener(() => {
@@ -74,22 +74,22 @@ public class RankingList : MonoBehaviour
         //    playGamesService.SubmitScore("CgkIhb2XjIMSEAIQCA", 10000);
         //});
 
-        btnShowLeaderboard.onClick.AddListener(() =>
-        {
-            Debug.Log("Open RankingList");
+        //btnShowLeaderboard.onClick.AddListener(() =>
+        //{
+        //    Debug.Log("Open RankingList");
 
-            try
-            {
-                playGamesService.ShowLeaderboard("CgkIxtab18QbEAIQAQ");
+        //    try
+        //    {
+        //        playGamesService.ShowLeaderboard("CgkIxtab18QbEAIQAQ");
 
-            }
-            catch (System.Exception)
-            {
+        //    }
+        //    catch (System.Exception)
+        //    {
 
-                Debug.Log("Ranking");
+        //        Debug.Log("Ranking");
 
-            }
-        });
+        //    }
+        //});
     }
 
     void OnSignInSucceeded()

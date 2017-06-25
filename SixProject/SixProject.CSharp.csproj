@@ -79,42 +79,8 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Editor">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Security">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Stores">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="Apple">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\Apple.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Facebook\Facebook.dll</HintPath>
-    </Reference>
-    <Reference Include="Tizen">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Tizen\Tizen.dll</HintPath>
-    </Reference>
-    <Reference Include="winrt">
-      <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SixProject.CSharp.Plugins.csproj">
-      <Project>{68C4EBD4-5B00-8CC6-177B-F42F72D6A85C}</Project>
-      <Name>SixProject.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\ADS\TestBannerAds.cs" />
-    <Compile Include="Assets\ADS\TestInterstitialAd.cs" />
-    <Compile Include="Assets\ADS\TestUnityAds.cs" />
-    <Compile Include="Assets\ADS\TestVungle.cs" />
     <Compile Include="Assets\Game\Resources\ManageVariables.cs" />
     <Compile Include="Assets\Game\Scripts\ChallengeLevels\LevelCreator.cs" />
     <Compile Include="Assets\Game\Scripts\ChallengeLevels\LevelGuiManager.cs" />
@@ -150,47 +116,7 @@
     <Compile Include="Assets\My\Scripts\RewardButton.cs" />
     <Compile Include="Assets\My\Scripts\StartAds.cs" />
     <Compile Include="Assets\My\Scripts\StartTop.cs" />
-    <Compile Include="Assets\UnityPluginAds\Api\AdRequestConfig.cs" />
-    <Compile Include="Assets\UnityPluginAds\Api\BannerPosition.cs" />
-    <Compile Include="Assets\UnityPluginAds\Api\BannerSize.cs" />
-    <Compile Include="Assets\UnityPluginAds\Common\IAdsVideoClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Common\IBannerClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Common\IInterstitialClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\AdsClientFactory.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\Android\Utils.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\Android\admob\AdMobBannerClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\Android\admob\AdMobInterstitialClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\Android\unityads\UnityAdsVideoClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\Platforms\Android\vungle\VungleAdsVideoClient.cs" />
-    <Compile Include="Assets\UnityPluginAds\VideoAdRequestConfig.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\AnalyticsTools.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Common\IAppsFlyerAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Common\IFBAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Common\IUMAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Platforms\AnalyticsToolFactory.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Platforms\Android\Utils.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Platforms\Android\appsflyer\AppsFlyerAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Platforms\Android\facebook\FBAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginAnalytics\Platforms\Android\umeng\UMAnalytics.cs" />
-    <Compile Include="Assets\UnityPluginCommon\ConfigUtil.cs" />
-    <Compile Include="Assets\UnityPluginCommon\DialogUtil.cs" />
-    <Compile Include="Assets\UnityPluginCommon\MarketUtil.cs" />
-    <Compile Include="Assets\UnityPluginPlayGames\Common\IPlayGamesService.cs" />
-    <Compile Include="Assets\UnityPluginPlayGames\Common\Loom.cs" />
-    <Compile Include="Assets\UnityPluginPlayGames\Platforms\Andorid\AndoirdPlayGamesService.cs" />
-    <Compile Include="Assets\UnityPluginPlayGames\Platforms\PlayGamesServiceFactory.cs" />
     <Compile Include="Assets\sample\TestPlayGames.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
-    <None Include="Assets\PlayServicesResolver\proguard-messaging-workaround.txt" />
-    <None Include="Assets\PlayServicesResolver\proguard-unity.txt" />
-    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\Config\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\Config\res\values\ids.xml" />
-    <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
-    <None Include="Assets\Plugins\Android\Firebase\res\values\ids.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ public class PayMoneyButton : MonoBehaviour {
 
         try
         {
-            AnalyticsTools.Instance.GetUMAnalytics().OnEvent("cost_Click");
+            //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("cost_Click");
         }
         catch (System.Exception)
         {

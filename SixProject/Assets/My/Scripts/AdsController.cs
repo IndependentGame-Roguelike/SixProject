@@ -33,8 +33,8 @@ public class AdsController : MonoBehaviour {
 
     void AddAds()
     {
-        gameObject.AddComponent<TestBannerAds>();
-        gameObject.AddComponent<TestInterstitialAd>();
+        //gameObject.AddComponent<TestBannerAds>();
+        //gameObject.AddComponent<TestInterstitialAd>();
     }
 
     public void PaySucceed()
