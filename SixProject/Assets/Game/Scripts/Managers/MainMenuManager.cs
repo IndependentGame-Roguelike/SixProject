@@ -74,6 +74,7 @@ namespace MadFireOn
             try
             {
                 //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("start_Click");
+                UmengGameAnalytics.instance.UpdataEvent("start_Click");
             }
             catch (System.Exception)
             {
@@ -90,6 +91,7 @@ namespace MadFireOn
                 try
                 {
                     //GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
+                    AdsController.instance.ShowInterstitialAds();
 
                 }
                 catch (System.Exception)
@@ -133,18 +135,17 @@ namespace MadFireOn
         {
             sound.Play();
             //Purchaser.instance.BuyNoAds(); //uncomment after adding respective sdk
-
-
-
-
-
+            UmengGameAnalytics.instance.PayNoADs();
+            GameManager.instance.canShowAds = false;
+            AdsController.instance.HideADs();
+            UmengGameAnalytics.instance.UpdataEvent("cost_Click");
         }
 
         void LeaderboardBtn()
         {
             try
             {
-                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("rank_Click");
+                UmengGameAnalytics.instance.UpdataEvent("rank_Click");
             }
             catch (System.Exception)
             {
@@ -170,9 +171,7 @@ namespace MadFireOn
         void RewaradAdsBtn()
         {
             sound.Play();
-            #if UNITY_ADS
-            UnityAds.instance.ShowRewardedAd();          //uncomment after adding respective sdk
-            #endif
+            AdsController.instance.ShowRewardedAd();          //uncomment after adding respective sdk
         }
 
 

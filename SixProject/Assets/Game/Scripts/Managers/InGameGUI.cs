@@ -136,7 +136,7 @@ namespace MadFireOn
                
                 yield return new WaitForSeconds(1.5f);
 
-                //SceneManager.LoadScene(0);
+                SceneManager.LoadScene(0);
                 gameOverPanel.SetActive(true);
                 revive.SetActive(false);
                 PlayerCanSeeAds.Instance.IsCanWatchMove = true;
@@ -148,7 +148,7 @@ namespace MadFireOn
             sound.Play();
             try
             {
-                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("suspend_Click");
+                UmengGameAnalytics.instance.UpdataEvent("suspend_Click");
             }
             catch (System.Exception)
             {
@@ -161,6 +161,7 @@ namespace MadFireOn
                 try
                 {
                     //GameObject.Find("AdsController").GetComponent<TestInterstitialAd>().HandleShowAdButtonClick();
+                    AdsController.instance.ShowInterstitialAds();
                 }
                 catch (System.Exception)
                 {
@@ -257,7 +258,7 @@ namespace MadFireOn
 
             try
             {
-                //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("revive_Click");
+                UmengGameAnalytics.instance.UpdataEvent("revive_Click");
             }
             catch (System.Exception)
             {

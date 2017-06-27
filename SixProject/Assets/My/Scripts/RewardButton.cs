@@ -72,7 +72,7 @@ public class RewardButton : MonoBehaviour {
     {
         try
         {
-            //AnalyticsTools.Instance.GetUMAnalytics().OnEvent("reward_Click");
+            UmengGameAnalytics.instance.UpdataEvent("reward_Click");
         }
         catch (System.Exception)
         {
