@@ -75,7 +75,7 @@ namespace Umeng
         public static void SetLogEnabled(bool value)
         {
 #if UNITY_EDITOR
-        //Debug.Log("SetLogEnabled");  
+            //Debug.Log("SetLogEnabled");  
 #elif UNITY_IPHONE
         _SetLogEnabled(value);
 #elif UNITY_ANDROID
@@ -95,12 +95,13 @@ namespace Umeng
         public static void Event(string eventId)
         {
 #if UNITY_EDITOR
-        //Debug.Log("Event");  
+            Debug.Log(eventId);
 #elif UNITY_IPHONE
         _Event(eventId);
-#elif UNITY_ANDROID
-            Agent.CallStatic("onEvent", Context, eventId);
+//#elif UNITY_ANDROID
 #endif
+            Agent.CallStatic("onEvent", Context, eventId);
+            Debug.LogError("Context== "+ Context+ "   eventId== "+ eventId);
         }
         //不同的标签会分别进行统计，方便同一事件的不同标签的对比,为nil或空字符串时后台会生成和eventId同名的标签.
 

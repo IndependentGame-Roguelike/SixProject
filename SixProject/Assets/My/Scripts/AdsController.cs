@@ -1,6 +1,8 @@
 ﻿using System;
+//using System.Diagnostics;
 using GoogleMobileAds.Api;
 using MadFireOn;
+using UnityEngine;
 
 public class AdsController
 {
@@ -48,7 +50,7 @@ public class AdsController
         //   AdRequest request = new AdRequest.Builder().Build();
         AdRequest request = new AdRequest.Builder()
        .AddTestDevice(AdRequest.TestDeviceSimulator)       // Simulator.
-       .AddTestDevice("2077ef9a63d2b398840261c8221a0c9b")  // My test device.
+       .AddTestDevice("9c78eff7b10e2999770894fe7fbbc766")  // My test device.
        .Build();
         // Load the banner with the request.
         bannerView.LoadAd(request);
@@ -78,11 +80,13 @@ public class AdsController
     public void HandleOnAdLoaded(object sender, EventArgs args)
     {
         // Handle the ad loaded event.
+        Debug.LogError("----------HandleOnAdLoaded----"+ sender);
     }
 
     public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
         // Handle the ad failed to load event.
+        Debug.LogError("----------HandleOnAdFailedToLoad----" + sender);
     }
 
     public void HandleOnAdOpened(object sender, EventArgs args)

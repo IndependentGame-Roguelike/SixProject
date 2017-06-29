@@ -27,6 +27,8 @@ public class UmengGameAnalytics
     {
         GA.StartWithAppKeyAndChannelId(AppKey, ChannelId);
         GA.EnableActivityDurationTrack(true);
+        GA.SetLogEnabled(true);
+        GA.SetLogEncryptEnabled(false);
         GA.PageBegin("mainGame");
         //GA.UpdateOnlineConfig();
         //GA.GetConfigParamForKey(ConfigKey);
